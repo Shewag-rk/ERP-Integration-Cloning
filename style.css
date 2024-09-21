@@ -36,14 +36,13 @@ body{
 nav {
     position: sticky;
     top: 0;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     background-color: #eadada;
 }
 li{
     list-style-type: none;
 }
 a{
-    
     text-decoration: none;
 }
 a:hover{
@@ -62,7 +61,7 @@ a:hover{
 .navbar li{
     position: relative;
 }
-.navbar >li >a{
+.navbar >li>a{
     display: block;
     padding: 24px 0px;
     color: black;
@@ -79,6 +78,9 @@ a:hover{
     border-top: 2px solid rgb(200, 78, 42);
     width: 220px;
     box-shadow: 0 2px 3px 0 rgba(0,0, 0, 0.2);
+}
+.dropdown li a{
+    color: black;
 }
 .dropdown li {
     padding: 10px;
@@ -927,24 +929,29 @@ a{
 }
 
 .chat-btn>button{
-    background-color: #b02404;
+    background-color: var(--primary-brown-color);
     border-radius: 50%;
     /* width: fit-content; */
     font-size: 40px;
     border-style: none;
+    
 }
 .chat-btn{
     position: fixed;
     width : fit-content;
     right: 10px;
     bottom: 20px;
+    
     /* bottom: 50px; */
     /* float: right; */
 }
 .chat-btn:hover{
     transform: scale(1.1);
 }
+.chat-font {
+    background-color: #f01616;
 
+}
 /* Medai-Query CSS*/
 
 @media screen and (max-width:450px){
